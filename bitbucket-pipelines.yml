@@ -8,9 +8,9 @@ image: node:12.18.2
 pipelines:
   default:
     - step:
-      name: Install dependencies and Test
-      caches:
-        - node
-      script:
-        - npm install
-        - npm test
+        name: Install dependencies and Test
+        caches:
+          - node
+        script:
+          - npm install
+          - npm test
